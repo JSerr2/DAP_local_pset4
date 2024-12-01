@@ -19,3 +19,8 @@ This part of the code evaluates the performance difference between processing no
 
 #### 6
 The plot compares the total processing time for non-partitioned and partitioned datasets across different states and the time difference between the two. The y-axis represents the time (in seconds), and the x-axis shows the size of the filtered data (number of observations). The results indicate that partitioned files are overall faster than non-partitioned files. However, it seems like there is no meaningful association between the size of the file and the time saved. There are more differences in size in the smaller files. One possible reason we don't see any meaningful difference could be that the file processing was already efficient enough, and as such, the size of the file made no difference. 
+
+### Question 2 Python to R
+
+#### 1
+The Python code is a word-guessing game. The program selects from  a list a random five-letter word, and the player is given a fixed number of attempts to guess the correct word. After each attempt, the program provides feedback by revealing which letters are in the correct position and which are not by using underscores. The game continues until the player guesses the word correctly or runs out of attempts. Once the player runs out of attempts, the program reveals the correct word. 
