@@ -1,17 +1,24 @@
 import random
 
-mylist = [
+# creates a list of five letter words
+
+retmylist = [
     "apple", "brave", "crane", "drive", "eagle",
     "fable", "grape", "house", "input", "joker",
     "knife", "lemon", "mango", "nerve", "ocean"
 ]
 
+print (retmylist)
+
+# Creates a function which takes two inputs, a random word from the list and the maximum number of words allowed for the player to guess the correct word.
 def myfunction1(mylist, mynumber2):
     mystring1 = random.choice(mylist).lower()
     mynumber1 = 0
 
+# This prints a welcome announcements and tells you how many attempts you have to guess the words
+
     print("Welcome!")
-    print(f"You have {mynumber2} attempts.")
+    print("You have {mynumber2} attempts.")
     
     while mynumber1 < mynumber2:
         mystring2 = input("Enter your guess: ").lower().strip()
@@ -40,3 +47,4 @@ def myfunction1(mylist, mynumber2):
         print(f"Sorry, you lost. The correct answer was: '{mystring1}'.")
 
 myfunction1(mylist, 5)
+
